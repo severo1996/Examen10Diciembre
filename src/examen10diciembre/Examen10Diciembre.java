@@ -35,7 +35,7 @@ public class Examen10Diciembre {
                     if (i % 2 == 0) {
                         p = false;
                     } else {
-                        int contador1 = 0;
+                        int counter = 0;
                         int i1 = 1;
                         int k = (i - 1) / 2;
                         if (k % 2 == 0) {
@@ -44,15 +44,15 @@ public class Examen10Diciembre {
 
                         while (i1 <= k) {
                             if (i % i1 == 0) {
-                                contador1++;
+                                counter++;
                             }
                             i1 += 2;
-                            if (contador1 == 2) {
+                            if (counter == 2) {
                                 i1 = k + 1;
                             }
                         }
 
-                        if (contador1 == 1) {
+                        if (counter == 1) {
                             p = true;
                         }
                     }
