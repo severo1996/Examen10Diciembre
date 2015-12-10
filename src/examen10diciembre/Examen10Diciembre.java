@@ -1,5 +1,7 @@
 package examen10diciembre;
 
+import javax.swing.JOptionPane;
+
 public class Examen10Diciembre {
 
     /**
@@ -9,14 +11,24 @@ public class Examen10Diciembre {
     //LIstar los numeros según el numero de digitos indicado
     //Considero solo hasta numeros menores a 100000 (5 digitos), 
     //por el hecho de k buscar numeros primos a partir de 6 digitos, el proceso se hace muy lento.
-    public static boolean p = false;
-
+    public static boolean p = false;    
+     public static int PedirNumero(){                    
+        
+        return Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero"));
+       
+     }
+     public static int PedirNumerocontador(){
+         return Integer.parseInt(JOptionPane.showInputDialog("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): "));
+     } 
+   
     public static void main(String arg[]) {
-        int numero = 3;
+        int numero =PedirNumero();
         int ndig = 0;
-        if (numero <= 0) {
-            System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
-        }
+        
+        if(numero<=0){
+        PedirNumerocontador();}
+        
+       
         for (int i = 1; i <= 99999; i++) {
             int aux = i;
 
