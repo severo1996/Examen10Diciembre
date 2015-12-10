@@ -12,9 +12,9 @@ public class Examen10Diciembre {
     public static boolean p = false;
 
     public static void main(String arg[]) {
-        int dig = 3;
+        int numero = 3;
         int ndig = 0;
-        if (dig <= 0) {
+        if (numero <= 0) {
             System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
         }
         for (int i = 1; i <= 99999; i++) {
@@ -26,9 +26,9 @@ public class Examen10Diciembre {
                 aux = aux / 10;
                 contador++;
             }
-            ndig = contador;
+            numero = contador;
 
-            if (ndig == dig) {
+            if (numero == contador) {
                 if (i < 4) {
                     p = true;
                 } else {
